@@ -1,12 +1,20 @@
-name: My First Workflow
+name: Basic Commands
 
 on:
   push:
 
 jobs:
-  hello:
+  practice:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Current Directory 
+        run: pwd
+      - name: List files
+        run: ls -la
+      - name: Date
+        run: date
+
+
       - name: Print Message
         run: echo "Hello from GitHub Actions!"
